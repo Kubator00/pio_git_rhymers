@@ -31,6 +31,7 @@ public class IntLinkedList {
 
 
     private static final int EMPTY_LIST = -1;
+
     private Node last;
     private int i;
 
@@ -66,6 +67,10 @@ public class IntLinkedList {
         int ret = last.getValue();
         last = last.getPrev();
         return ret;
+    }
+
+    public Node getLast() {
+        return last;
     }
 
 }
